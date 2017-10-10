@@ -24,41 +24,14 @@
 							<div class="inner">
 									<#if nav_item.hasChildren()>
 
-										<#--
-
-										<ul class="child-menu" role="menu">
-											<#list nav_item.getChildren() as nav_child>
-												<#assign nav_child_attr_selected = "" />
-												<#assign nav_child_css_class = "" />
-
-												<#if nav_item.isSelected()>
-													<#assign nav_child_attr_selected = "aria-selected='true'" />
-													<#assign nav_child_css_class = "selected" />
-												</#if>
-
-												<li ${nav_child_attr_selected} class="${nav_child_css_class}" id="layout_${nav_child.getLayoutId()}" role="presentation">
-													<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
-														<span>
-															${nav_child.getName()}
-														</span>
-													</a>
-												</li>
-											</#list>
-										</ul>
-										-->
-
-										<#-- New columized menu. Not finished yet. Will replace above child menu. -->
-
-										<#--
-										-->
 										<#assign navChildren = nav_item.getChildren() />
 										<#assign navChildrenSize = navChildren?size />
 										<#assign navChildrenColumns = 3 />
 										<#assign navChildrenPerColumn = (navChildrenSize/navChildrenColumns)?ceiling />
 
-										<div class="row-fluid">
+										<div class="row">
 
-											<div class="col span4 first_ col1">
+											<div class="col col-md-4 col1">
 												<div class="col-inner">
 													<#list navChildren as nav_child>
 														<#if nav_child_index gte 0 && nav_child_index lt (1*navChildrenPerColumn)>
@@ -82,7 +55,7 @@
 												</div>
 											</div>
 
-											<div class="col span4 col2">
+											<div class="col col-md-4 col2">
 												<div class="col-inner">
 													<#list navChildren as nav_child>
 														<#if nav_child_index gte (1*navChildrenPerColumn) && nav_child_index lt (2*navChildrenPerColumn)>
@@ -107,7 +80,7 @@
 
 											</div>
 
-											<div class="col span4 last_ col3">
+											<div class="col col-md-4 col3">
 												<div class="col-inner">
 													<#list navChildren as nav_child>
 														<#if nav_child_index gte (2*navChildrenPerColumn )>
@@ -132,11 +105,6 @@
 											</div>
 
 										</div>
-
-
-
-
-
 
 									</#if>
 							</div>
