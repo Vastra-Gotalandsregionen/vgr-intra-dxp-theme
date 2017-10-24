@@ -4,7 +4,7 @@
 
   var elListToggleControls = $('.toggle-controls');
 	if (elListToggleControls.length === 1) {
-		$(elListToggleControls[0]).removeClass('visible-xs');
+		//$(elListToggleControls[0]).removeClass('visible-xs');
 	}
 
   var elBody = $('body');

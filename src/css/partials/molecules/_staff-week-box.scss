@@ -1,4 +1,11 @@
 .staff-week-box {
+
+  &.content-box {
+    .content-box-bd {
+      padding-bottom: 2em;
+    }
+  }
+  
   .content-box-bd {
 
     //line-height: 22px;

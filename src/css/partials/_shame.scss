@@ -26,78 +26,56 @@
 // Hides the portlet titles
 // --------
 
-.aui {
-	.portlet-title {
-		display: none;
-	}
 
-	.portlet-topper {
-		.portlet-topper-toolbar {
-			display: none;
-		}
-	}
-
-}
-
-.aui {
-	.no-portlet-content {
-		margin-bottom: 0;
-
-		.portlet {
-			padding: 0;
-		}
-	}
-}
-
-
-.page-edit {
-
-	&.controls-visible {
-
-		.portlet-title {
-			display: block;
-		}
+.custom-admin-controls-closed {
+	.portlet {
 
 		.portlet-topper {
-			.portlet-topper-toolbar {
-				display: block;
-			}
-		}
-
-	}
-
-	&.controls-hidden {
-
-		.portlet-title {
 			display: none;
 		}
 
-		.portlet-topper {
-			.portlet-topper-toolbar {
+		.portlet-content {
+			.portlet-title-text {
 				display: none;
 			}
 		}
 
 	}
-
 }
 
-.aui {
-	// Show border class can be set on portlet ("Grafiskt utseende -> Avancerade stilalternativ" to force borders to be shown.)
-	.show-borders {
-		.portlet-title {
-			display: block;
-		}
-	}
+// .page-edit {
+//
+// 	&.controls-visible {
+//
+// 		.portlet-title {
+// 			display: block;
+// 		}
+//
+// 		.portlet-topper {
+// 			.portlet-topper-toolbar {
+// 				display: block;
+// 			}
+// 		}
+//
+// 	}
+//
+// 	&.controls-hidden {
+//
+// 		.portlet-title {
+// 			display: none;
+// 		}
+//
+// 		.portlet-topper {
+// 			.portlet-topper-toolbar {
+// 				display: none;
+// 			}
+// 		}
+//
+// 	}
+//
+// }
 
-	.page-edit {
-		&.controls-visible,
-		&.controls-hidden {
-			display: block;
-		}
-	}
 
-}
 
 
 // For some reason, this image does not exist in the _styled theme
