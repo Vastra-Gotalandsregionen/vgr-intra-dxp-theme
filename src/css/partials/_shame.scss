@@ -23,26 +23,6 @@
 	//display: none;
 }
 
-// Hides the portlet titles
-// --------
-
-
-.custom-admin-controls-closed {
-	.portlet {
-
-		.portlet-topper {
-			display: none;
-		}
-
-		.portlet-content {
-			.portlet-title-text {
-				display: none;
-			}
-		}
-
-	}
-}
-
 // .page-edit {
 //
 // 	&.controls-visible {

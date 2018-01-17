@@ -1,4 +1,4 @@
-&,
+html,
 body {
   height: 100%;
 }
@@ -46,7 +46,7 @@ body {
 
 }
 
-&.ie {
+html.ie {
 	body {
 		@include word-break(keep-all);
 
