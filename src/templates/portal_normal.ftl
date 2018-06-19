@@ -61,7 +61,7 @@
 		<div id="topBar">
 			<div class="container-normal">
 
-				<a class="logo-vgr ${logo_css_class}" href="/">
+				<a class="logo-vgr ${logo_css_class}" href="${site_default_public_url}">
 
 					<#assign logo_src = images_folder + "/theme/logo/vgr-logo-white.png" />
 

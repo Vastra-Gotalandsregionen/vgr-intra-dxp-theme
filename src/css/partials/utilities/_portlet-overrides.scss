@@ -178,8 +178,14 @@
 
 // Asset Publisher
 .portlet-asset-publisher {
-	.taglib-header {
-		display: none;
+
+	.portlet-content {
+		.portlet-body {
+			// Same as taglib-header in 6.2
+			.h2 {
+				display: none;
+			}
+		}
 	}
 
 	.asset-full-content {
