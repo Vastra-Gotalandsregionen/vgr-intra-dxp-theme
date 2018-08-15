@@ -36,8 +36,8 @@
         }
 
 
-        &.toggler-header-expanded,
-        &.toggler-header-expanded:hover {
+        &.ifeed-parsed-title-expanded,
+        &.ifeed-parsed-title-expanded:hover {
           background: $vgrintra-yellow;
           color: #fff;
 
@@ -48,7 +48,7 @@
 
       }
 
-      .toggler-content {
+      .ifeed-parsed-content {
         padding: 9px 15px;
       }
 
