@@ -117,19 +117,7 @@
         $(feedContentNode).toggle(400);
       });
 
-
-
-
-      // var toggler = new A.Toggler({
-      //   animated: true,
-      //   container: feedContainer,
-      //   content: feedContentNode,
-      //   expanded: expanded,
-      //   header: titleNode
-      // });
-
       $(feedContainer).addClass('ifeed-parsed-collapsible');
-
     }
 
   }
@@ -146,9 +134,6 @@
     feedContentNode.html(template(json));
 
     setupIfeedDisplayTypes(feedContainer);
-
-    //Setup display dataType
-    // Removing loading (?)
   }
 
 
