@@ -34,37 +34,12 @@
 			</div>
 		</#if>
 
-		<#--
-		<div id="heading">
-			<h1 class="site-title">
-				<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-					<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
-				</a>
-
-				<#if show_site_name>
-					<span class="site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-						${site_name}
-					</span>
-				</#if>
-			</h1>
-		</div>
-
-		<#if !is_signed_in>
-			<a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
-		</#if>
-
-		<#if has_navigation && is_setup_complete>
-			<#include "${full_templates_path}/navigation.ftl" />
-		</#if>
-		-->
-
 		<a href="#mobileMenuTrigger" id="mobileMenuTrigger">
-	        <span class="sr-only">Meny</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	    </a>
-
+	    <span class="sr-only">Meny</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+    </a>
 
 		<div id="topBar">
 			<div class="container-normal">
@@ -85,10 +60,10 @@
 					<div class="top-bar-navigation">
 
 						<#--
+						-->
 						<#if topnav_article_id?has_content>
 							<@includeWCD group_id=group_id article_id=topnav_article_id />
 						</#if>
-						-->
 
 						<#if !is_signed_in>
 							<a href="${sign_in_url}" data-redirect="${is_login_redirect_required?string}" id="signIn" class="signin" rel="nofollow">${sign_in_text}</a>
