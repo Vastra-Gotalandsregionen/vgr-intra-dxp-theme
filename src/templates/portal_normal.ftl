@@ -73,13 +73,11 @@
 
 					</div>
 
-					<#--
-					<#if show_search>
+					<#if show_search && search_layout_friendly_url != "">
 						<span class="top-search searchbox">
 							<#include "${full_templates_path}/search.ftl" />
 						</span>
 					</#if>
-					-->
 
 				</div>
 

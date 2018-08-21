@@ -26,6 +26,17 @@ This file allows you to override and define new FreeMarker variables.
 <#assign footer_col_1_article_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.kernel.model.Group", "CUSTOM_FIELDS", "vgr-intra-footer-col-1-article-id", group_id, "")  />
 <#assign footer_col_2_article_id = expandoValueLocalService.getData(company_id, "com.liferay.portal.kernel.model.Group", "CUSTOM_FIELDS", "vgr-intra-footer-col-2-article-id", group_id, "")  />
 
+<#assign search_layout_friendly_url = expandoValueLocalService.getData(company_id, "com.liferay.portal.kernel.model.Group", "CUSTOM_FIELDS", "vgr-intra-search-layout-friendly-url", group_id, "")  />
+
+<#------ Theme Settings ----------------------------------------------------------------------------------------------------------------->
+
+<#assign show_search = false />
+
+<#assign theme_setting_show_search = theme_display.getThemeSetting("show-search")! />
+
+<#if theme_setting_show_search = "true">
+	<#assign show_search = true />
+</#if>
 
 
 
