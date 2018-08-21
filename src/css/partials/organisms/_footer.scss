@@ -3,16 +3,16 @@
   color: $vgrintra-white;
   height: $footer-height;
 
+  .portlet {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+  }
+
   .footer-inner {
     padding: 20px 0;
     text-align: center;
     @include pie-clearfix();
-
-    .span4.first,
-    .span4.last {
-      //text-align: left;
-    }
-
   }
 
   .portlet-boundary {
