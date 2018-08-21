@@ -26,6 +26,14 @@
 <div class="container-fluid" id="wrapper">
 	<header id="banner" role="banner">
 
+		<#if top_alert_article_id?has_content>
+			<div id="topAlert">
+				<div class="container-normal">
+					<@includeWCD group_id=group_id article_id=top_alert_article_id />
+				</div>
+			</div>
+		</#if>
+
 		<#--
 		<div id="heading">
 			<h1 class="site-title">
