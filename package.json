@@ -11,21 +11,7 @@
 		"rubySass": false,
 		"templateLanguage": "ftl",
 		"version": "7.0",
-		"themeletDependencies": {
-			"vgr-admin-controls-themelet": {
-				"liferayTheme": {
-					"screenshot": "",
-					"themelet": true,
-					"version": "7.0"
-				},
-				"name": "vgr-admin-controls-themelet",
-				"publishConfig": {
-					"tag": "7_0_x"
-				},
-				"version": "1.0.0",
-				"path": "/Users/erikandersson/.npm-packages/lib/node_modules/vgr-admin-controls-themelet"
-			}
-		}
+		"themeletDependencies": {}
 	},
 	"devDependencies": {
 		"gulp": "^3.8.10",
@@ -35,7 +21,5 @@
 	"publishConfig": {
 		"tag": "7_0_x"
 	},
-	"dependencies": {
-		"vgr-admin-controls-themelet": "/Users/erikandersson/.npm-packages/lib/node_modules/vgr-admin-controls-themelet"
-	}
+	"dependencies": {}
 }

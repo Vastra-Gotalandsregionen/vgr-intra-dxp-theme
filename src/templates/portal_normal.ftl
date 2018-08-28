@@ -143,6 +143,7 @@
 
 <@liferay_util["include"] page=body_bottom_include />
 
+<script type="text/javascript" src="${javascript_folder}/custom-admin-controls.js"></script>
 <script type="text/javascript" src="${javascript_folder}/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="${javascript_folder}/handlebars/handlebars.min.js"></script>
 <script type="text/javascript" src="${javascript_folder}/jquery/jquery-handlebars/jquery-handlebars.min.js"></script>
