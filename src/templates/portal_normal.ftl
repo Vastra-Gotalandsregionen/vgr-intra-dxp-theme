@@ -11,6 +11,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<script type="text/javascript" src="${javascript_folder}/pojs.js"></script>
+    <script type="text/javascript" src="${javascript_folder}/handlebars/handlebars.min.js"></script>
+
 
 	<@liferay_util["include"] page=top_head_include />
 </head>
@@ -145,7 +147,6 @@
 
 <script type="text/javascript" src="${javascript_folder}/custom-admin-controls.js"></script>
 <script type="text/javascript" src="${javascript_folder}/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="${javascript_folder}/handlebars/handlebars.min.js"></script>
 <script type="text/javascript" src="${javascript_folder}/jquery/jquery-handlebars/jquery-handlebars.min.js"></script>
 
 <script type="text/javascript" src="${javascript_folder}/jq.js"></script>
